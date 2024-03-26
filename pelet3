@@ -1,0 +1,5 @@
+Please enter 30 names seperated by single white spcace or single newline , name is max 20 letters:
+
+aLeXAnDeR iSaBeLlA bEnJaMiN ViCtOrIa ChRiStOpHeR GaBrIeLlA NiChOlAs SaMaNtHa SeBaStIaN ElIzAbEtH JoNaThAn VaLeNtInA NaThAnIeL PeNeLoPe ZaChArY ChArLoTtE ThEoDoRe HaRrIsOn MaDeLeInE ChRiStIaN GeNeViEvE MaXwElL AnAsTaSiA JeReMiAh SeRaPhInA DoMiNiC ViViEnNe EvAnGeLiNe AlExAnDeR
+
+Error, 1 and 29 are duplicates, please do not enter any name twice

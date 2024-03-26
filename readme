@@ -1,0 +1,10 @@
+kelet1,2 has no duplicates
+kelet3 has duplicates and shows case sensetivity tolerance
+
+comments:
+
+char array[MAX_WORDS][MAX_LETTERS]; is good but not the best option fromm memory prespective.
+i could also use: char *array[MAX_WORDS];
+and then for each name i encounter do malloc.
+it could save memory in cases with shorter names.
+but in our case its doesnt matter a lot.

@@ -1,0 +1,15 @@
+Please enter 30 names seperated by single white spcace or single newline , name is max 20 letters:
+
+Jonathan Isabella Benjamin Victoria Christopher Gabriella Nicholas
+
+The Output:
+Isabella
+Gabriella
+Benjamin
+Gabriella
+Jonathan
+Gabriella
+Isabella
+Isabella
+Christopher
+Isabella

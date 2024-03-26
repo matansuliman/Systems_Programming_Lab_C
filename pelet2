@@ -1,0 +1,17 @@
+Please enter 30 names seperated by single white spcace or single newline , name is max 20 letters:
+
+Nathaniel Penelope Zachary
+Charlotte Theodore
+Alexandra Harrison Madeleine
+
+The Output:
+Harrison
+Charlotte
+Zachary
+Zachary
+Nathaniel
+Madeleine
+Zachary
+Nathaniel
+Theodore
+Charlotte
