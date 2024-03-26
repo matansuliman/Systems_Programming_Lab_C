@@ -1,0 +1,34 @@
+
+Enter new command:read_mat MAT_G, 3.2, 8
+*** Undefined matrix name MAT_G
+Enter new command:read_mat mat_a, 3.2, -5.3
+*** Undefined matrix name mat_a
+Enter new command:do_it MAT_A, MAT_B, MAT_C
+Undefined command namedo_it
+Enter new command:Add_Mat MAT_A, MAT_B, MAT_C
+Undefined command nameAdd_Mat
+Enter new command:read_mat MAT_A, abc, 567
+*** Argument is not a scalar: abc
+Enter new command:read_mat MAT_A, 3, -4.2, 6,*** Extraneous text after end of command: ,
+Enter new command:read_mat MAT_A
+Enter new command:mul_mat MAT_B, MAT_C
+*** missing comma
+Enter new command:trans_mat MAT_B, MAT_C, MAT_D
+*** Illegal comma
+Enter new command:print_mat, MAT_A
+*** Illegal comma
+Enter new command:trans_mat MAT_A MAT_B
+*** missing comma
+Enter new command:sub_mat MAT_A, , MAT_B, MAT_C
+*** Missing argument
+Enter new command:mul_scalar MAT_A, MAT_B, MAT_C 
+*** Argument is not a scalar: MAT_B
+Enter new command:stop now
+*** Extraneous text after end of command: now
+Enter new command:read_mat MAT_A, 3.2, -a
+*** Argument is not a scalar: -a
+Enter new command:
+Enter new command:
+
+*** EOF ***
+
