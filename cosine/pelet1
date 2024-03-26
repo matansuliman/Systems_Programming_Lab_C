@@ -1,0 +1,4 @@
+Enter angle in radian
+You Entered: 3.00
+my_cos returned: -0.989992
+cos from math.h returned: -0.989992

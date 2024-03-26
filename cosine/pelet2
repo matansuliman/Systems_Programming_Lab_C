@@ -1,0 +1,4 @@
+Enter angle in radian
+You Entered: 200.00
+my_cos returned: 0.487187
+cos from math.h returned: 0.487188
