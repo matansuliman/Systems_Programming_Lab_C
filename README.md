@@ -1,4 +1,4 @@
-Systems_Programming_Lab in c programming language
+C programming language
 
 There is a Final project and 4 other projects in other branches.
 
