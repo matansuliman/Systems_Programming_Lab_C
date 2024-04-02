@@ -1,4 +1,4 @@
-C programming language
+c
 
 There is a Final project and 4 other projects in other branches.
 
