@@ -1,19 +1,25 @@
-# c programming language
+# C programming language
 
-This is the Final project and there are 4 other projects in other branches.
+This is the Final project of a laboratory course and there are 4 other projects(in other branches).
 
-* this project is an assembler made in c.
-## input:
-* the input is an assembly code file for exp: file_name.as
-## output: 
+* This project is an assembler made in c.
+## Input:
+* The input is an assembly code file for exp: file_name.as
+## Output: 
 consists of several files:
   1) file_name.am: the input file after macros spread 
   2) file_name.ob: consists of binary machine code translated to special encoded 4 letters base (!,#,%,*)
   3) file_name.ent: includes local labels from file_name.as
   4) file_name.ext: includes external labels from file_name.as
 
+## Execution steps: :dart:
+1) clone this repo to your computer
+2) make sure you are in the project folder
+3) run: make
+4) run: ./driver.exe file_name1.as file_name2.as ...
 
-## Common language:
+
+## Common language: :abcd:
 * register - a variable used by assembly language, in this program, we call them r0-r7
 * operand - a data item(variable/number) operated on by an instruction.
 * line - a single line from the input file
@@ -31,7 +37,7 @@ binary line structure : [13,12,11,10] [9,8,7,6] [5,4] [3,2] [1,0]
     2) direct - suppose x is defined in the data segment, we can do 'dec x'
     3) constant - mov x[2],x[3]
     4) register - mov r1,r2
-* binary code - all binary lines of all of the lines in order.
+* binary code - all binary lines of all lines in order.
 * command segment - the first segment in the object file, contains the binary code of the commands
 * data segment - the second segment in the object file, contains the binary code of the data of the code
 * IC - instruction count, used to index the binary lines of the command segment
@@ -45,24 +51,25 @@ binary line structure : [13,12,11,10] [9,8,7,6] [5,4] [3,2] [1,0]
 ## further explanation:
 
 
-## must have in the assembly input file:
-
+## MUST have in the assembly input file: :skull_and_crossbones:
+* The first command of the file has to have a label, typically 'MAIN'
 * macro (if used)
     1) macro must be declared in the format: 'mcr NAME'
     2) macro name can't be a reserved name of assembly language
     3) macro must be closed by 'endmcr' statement
     4) macro declaration must be before any macro calling
 
-## take into consideration in the assembly input file: (These following conditions will not end the running of the program but will result in errors therefore no output files will be created)
+## Take into consideration in the assembly input file: :warning:
+(These following conditions will not end the running of the program but will result in errors therefore no output files will be created)
 * line
     1) a line can be up to 80 letters long
     2) lines a are differentiable in the input file by '\n' (newline)
     3) a line should be correct in terms of assembly syntax
-    4) the label of a line  can't be a reserved name of assembly language
+    4) The label of a line  can't be a reserved name of assembly language
 * label
     1) can't have spaces between the label name and the ':' sign
     2) can't have multiple declarations of the same label
-* number
+* Number
     1) can start with +/-
     2) only digits
 * .define:
