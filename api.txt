@@ -1,0 +1,28 @@
+Readme:
+
+line.c:
+represents a line of assembly code
+* holds a index number, label, content, and error
+* also has the binary content of the line
+
+macro.c:
+represents a macro from the assembly code
+* holds his name and all the lines inside him
+
+binaryline.c:
+represents a binary encoded line
+* holds an adress, data and label
+
+symbol.c: 
+represents a symbol from the assembly code
+* holds a name
+* data - IC or value
+* feature - mdefine=1, data=2, code=3
+* type - absolute=0, external=1, relocatable=2
+* defined - no=0, entry=1, extern=2
+
+
+flow of code:
+1) process the lines into a line list, seperate the labels from the content, clean the file from empty or command lines, multiple spaces.
+2) macros - process macros from the line list into a macro list, then extract them from the line list, finally spread them in the linr list. make the .am file.
+3)first and second pass - make the firat pass, construct the symbol table, find errors in the code and mark the line when an error is found. then make the second pass, and finish the binary code. after that constract a long binary line list and encoed for the .ob file. meanwhile take use of the symbol table to make the .ent .ext file.
